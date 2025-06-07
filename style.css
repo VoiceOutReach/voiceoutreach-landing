@@ -1,13 +1,14 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #f6f8fc;
-  color: #1a1a1a;
+  background-color: #e7e7f4; /* soft background */
+  color: #55557d; /* default body text */
 }
 
 .split-layout {
   display: flex;
   min-height: 100vh;
+  flex-wrap: wrap;
 }
 
 .left-panel, .right-panel {
@@ -16,14 +17,12 @@ body {
 }
 
 .left-panel {
-  background: #f1f0ff;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .right-panel {
-  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,51 +31,42 @@ body {
 .logo {
   font-weight: 800;
   font-size: 24px;
-  margin-bottom: 20px;
+  color: #ffffff;
 }
 
 h2 {
   font-size: 32px;
   font-weight: 700;
-  line-height: 1.3;
+  color: #ffffff;
 }
 
-.faint {
-  color: #777;
-  font-weight: 400;
+em {
+  font-style: italic;
+  color: #55557d;
 }
 
-.description {
+.description, .waitlist-info {
   margin: 20px 0;
   font-size: 18px;
-  color: #333;
+  color: #9999cc;
 }
 
 .btn-primary {
-  background: #4f46e5;
-  color: white;
-  text-decoration: none;
+  background-color: #8888aa;
+  color: #ffffff;
   padding: 12px 24px;
-  border-radius: 8px;
-  display: inline-block;
-  margin: 20px 0;
+  border-radius: 10px;
   font-weight: 600;
-}
-
-.waitlist-info {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 .testimonial {
-  background: #ffffff;
-  border-left: 4px solid #4f46e5;
-  padding: 15px 20px;
   margin-top: 40px;
   font-style: italic;
   font-size: 16px;
-  color: #444;
+  color: #6b6b93;
 }
 
 .author {
@@ -84,35 +74,27 @@ h2 {
   font-size: 14px;
   margin-top: 10px;
   font-style: normal;
-  color: #666;
+  color: #c2c2de;
 }
 
 .footer-icons {
   margin-top: 40px;
-  font-size: 24px;
+  font-size: 22px;
+  color: #c2c2de;
 }
 
 .image-box {
-  position: relative;
-  width: 90%;
-  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
 }
 
 .main-image {
   width: 100%;
+  max-width: 618px;
+  height: auto;
   border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
-
-.label {
-  position: absolute;
-  background: #4f46e5;
-  color: white;
-  padding: 6px 10px;
-  font-size: 12px;
-  border-radius: 6px;
-}
-
-.label.top-right { top: 10px; right: 10px; }
-.label.mid-left { top: 40%; left: 10px; }
-.label.bottom-right { bottom: 10px; right: 10px; }
